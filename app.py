@@ -61,8 +61,6 @@ df_selection = df.query(
     "City == @city & Customer_type == @customer & Gender == @Gender"
 )
 
-st.dataframe(df_selection)
-
 # ---Main Page---
 st.title(":bar_chart: Sales Dashboard")
 st.markdown("##")
@@ -95,8 +93,6 @@ st.markdown('----')
 sales_by_product_line = (
     df_selection.groupby(by = ['Product line']).sum([['Total']]).sort_values(by = "Total")
 )
-
-st.dataframe(df_selection.groupby(by = ['Product line']).sum([['Total']]).sort_values(by = "Total"))
 
 fig_product_sales =  px.bar(
     sales_by_product_line,
