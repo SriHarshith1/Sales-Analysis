@@ -15,7 +15,4 @@ git clone https://github.com/SriHarshith1/Sales-Analysis.git
 cd Sales-Analysis
 pip install -r requirements.txt
 streamlit run app.py
-## Tech Stack
-Python, Pandas, NumPy
-Seaborn, Matplotlib
-Streamlit for [!https://sales-analysis-pandas.streamlit.app/]webapp
+**Tech Stack:** Python, Pandas, NumPy, Seaborn, Matplotlib, [Streamlit](https://sales-analysis-pandas.streamlit.app/) for web app
